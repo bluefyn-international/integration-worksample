@@ -21,12 +21,12 @@ This project is for a proof of concept work sample for our integrations team.
        date/time from ShipIt
 
 2. You will use the ShipIt API vis-à-vis a heroku app URL to obtain the Carrier Pick-up Date & Time:
-    2. http://shipit-api.herokuapp.com/api/carriers/fedex/trackingID
-    2. http://shipit-api.herokuapp.com/api/carriers/ups/trackingID
+    1. http://shipit-api.herokuapp.com/api/carriers/fedex/trackingID
+    1. http://shipit-api.herokuapp.com/api/carriers/ups/trackingID
 
 3. You will parse the JSON response seeking the date/time associated with the Carrier Pick-up event.
-    3. The event name from UPS is called the "Origin scan"
-    3. The event name from FedEx is called "Picked up"
+    1. The event name from UPS is called the "Origin scan"
+    1. The event name from FedEx is called "Picked up"
 
 4. You will populate the “Carrier Pickup” property in the table with the date and time you retrieved for each record's 
    pick-up event. The date / time you will post in AirTable shall be in EST (UTC-5) format.
